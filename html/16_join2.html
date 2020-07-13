@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<head>
+	<meta charset="UTF-8">
+	<title>회전문</title>
+	<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/slick-theme.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/slick.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/responsive.css"/>
+
+
+</head>
+
+<body>
+<div class="container">
+	<header>
+		<div class="headerWrap">
+			<h1 class="logo">
+				<a href="./1_main.html">
+					<img src="../img/img_logo.png" alt="로고">
+				</a>
+			</h1>
+			<div class="mobileHeader">
+				<a href="#none" class="mobileBtn"></a>
+				<div class="inputBox">
+					<input type="text">
+					<a href="#none" class="searchBtn"></a>
+				</div>
+			</div>
+			<nav>
+				<div class="mobileInfo">
+					<h1 class="mobileLogo">
+						<a href="#none">
+							<img src="../img/img_mobile_logo.png">
+						</a>
+					</h1>
+					z
+					<div class="profileBox">
+						<div class="subject">홍길동</div>
+						<div class="con">gildong@gmail.com</div>
+					</div>
+				</div>
+
+
+				<div class="navMenu">
+					<a href="#none">한국채택국제회계기준(K-IFRS)</a>
+					<ul>
+						<li><a href="#none">기준서</a></li>
+						<li><a href="#none">질의회신</a></li>
+						<li><a href="#none">커뮤니티</a></li>
+					</ul>
+				</div>
+				<div class="navMenu">
+					<a href="#none">일반기업회계기준</a>
+					<ul>
+						<li><a href="#none">기준서</a></li>
+						<li><a href="#none">질의회신</a></li>
+						<li><a href="#none">커뮤니티</a></li>
+					</ul>
+				</div>
+				<div class="navMenu">
+					<a href="#none">커뮤니티</a>
+					<ul>
+						<li><a href="#none">K-IFRS</a></li>
+						<li><a href="#none">일반기업</a></li>
+					</ul>
+				</div>
+				<div class="navMenu">
+					<a href="#none">마이페이지</a>
+					<ul>
+						<li><a href="#none">프로필</a></li>
+						<li><a href="#none">북마크</a></li>
+						<li><a href="#none">문의하기</a></li>
+						<li><a href="#none">로그아웃</a></li>
+					</ul>
+				</div>
+
+				<div class="mobileMenu">
+					<div class="row"><a href="#none">프로필</a></div>
+					<div class="row"><a href="#none">북마크</a></div>
+					<div class="row"><a href="#none">문의하기</a></div>
+					<div class="row"><a href="#none">로그아웃</a></div>
+				</div>
+			</nav>
+
+		</div>
+	</header>
+	<div class="contents">
+
+		<section class="joinForm">
+			<div class="joinWrap">
+				<div class="titBox">회원가입</div>
+				<div class="inputGroup">
+					<div class="row">
+						<div class="subject">비밀번호</div>
+						<div class="con"><input type="text" class="tbox" value="gildonghong@gmail.com"></div>
+						<div class="alarmTxt">이메일을 입력해주세요.</div>
+					</div>
+					<div class="row">
+						<div class="subject">닉네임</div>
+						<div class="con"><input type="text" class="tbox" value="홍길동"></div>
+					</div>
+					<div class="row">
+						<div class="subject">비밀번호</div>
+						<div class="con"><input type="password" class="tbox"></div>
+						<div class="infoTxt">영문, 숫자, 특수문자 조함 8~20자리 조합</div>
+						<div class="alarmTxt">비밀번호를 입력해주세요.</div>
+					</div>
+					<div class="row">
+						<div class="subject">비밀번호 확인</div>
+						<div class="con"><input type="password" class="tbox"></div>
+					</div>
+					<div class="row">
+						<div class="agreeBox">
+							<div class="cbox">
+								<input type="checkbox">
+								<label class="chk">
+									<span class="txt">서비스 이용약관 동의 (필수)</span>
+								</label>
+							</div>
+							<a href="#none" class="agree"></a>
+						</div>
+						<div class="agreeBox">
+							<div class="cbox">
+								<input type="checkbox">
+								<label class="chk">
+									<span class="txt">개인정보처리방침 동의 (필수)</span>
+								</label>
+							</div>
+							<a href="#none" class="agree"></a>
+						</div>
+						<div class="agreeBox">
+							<div class="cbox">
+								<input type="checkbox">
+								<label class="chk">
+									<span class="txt">이벤트 및 할인소식 알림동의 (선택)</span>
+								</label>
+							</div>
+							<a href="#none" class="agree"></a>
+						</div>
+					</div>
+					<div class="row">
+						<a href="javascript:popup()" class="btn">회원가입</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/ui.js"></script>
+
+<script>
+	function popup() {
+		$('.popup').show();
+		$('.container').addClass('overlay');
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1641 @@
+/** common components start **/
+.mobile {
+  display: none !important; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%; }
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04), inset 0 -1px 0 0 #f3f3f3;
+  background-color: #ffffff; }
+  header .headerWrap {
+    position: relative;
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 8px 20px 8px 20px; }
+    header .headerWrap .mobileHeader {
+      display: none; }
+    header .headerWrap h1.logo {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%); }
+      header .headerWrap h1.logo a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 114px;
+        height: 48px; }
+        header .headerWrap h1.logo a img {
+          margin-top: 5PX;
+          width: 35%;
+          max-width: 100%; }
+    header .headerWrap nav {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0; }
+      header .headerWrap nav .mobileInfo {
+        display: none; }
+      header .headerWrap nav .navMenu {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative; }
+        header .headerWrap nav .navMenu + .navMenu {
+          margin-left: 40px; }
+          header .headerWrap nav .navMenu + .navMenu:after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 16px;
+            background-color: #ddd; }
+        header .headerWrap nav .navMenu a {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 15px;
+          line-height: 40px;
+          font-weight: 700; }
+        header .headerWrap nav .navMenu ul {
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 #f3f3f3;
+          background-color: #ffffff;
+          text-align: left;
+          position: absolute;
+          left: -20px;
+          right: -20px;
+          top: 41px;
+          z-index: 10;
+          display: none; }
+          header .headerWrap nav .navMenu ul li {
+            display: block; }
+            header .headerWrap nav .navMenu ul li a {
+              width: 100%;
+              padding: 0 20px;
+              font-size: 13px;
+              line-height: 45px;
+              font-weight: 500;
+              color: #393939; }
+  header .subHeaderWrap {
+    background-color: #0029b2;
+    height: 56px;
+    position: relative;
+    padding: 8px;
+    font-size: 0; }
+    header .subHeaderWrap .homeBox {
+      display: inline-block;
+      vertical-align: middle;
+      box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.1);
+      background-color: rgba(66, 98, 205, 0); }
+      header .subHeaderWrap .homeBox .homeBtn {
+        display: inline-block;
+        vertical-align: middle;
+        width: 48px;
+        height: 40px;
+        line-height: 40px;
+        background: url("../img/ic_home.png") no-repeat center/24px 24px; }
+    header .subHeaderWrap .subjectBox {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0; }
+      header .subHeaderWrap .subjectBox .txt {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        padding-left: 20px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500; }
+        header .subHeaderWrap .subjectBox .txt + .txt {
+          padding-left: 40px;
+          background: url("../img/ic_depth_arrow.png") no-repeat center left 8px/24px 24px; }
+    header .subHeaderWrap .searchBox {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 350px;
+      border-radius: 2px;
+      overflow: hidden; }
+      header .subHeaderWrap .searchBox input {
+        outline: none;
+        font-size: 13px;
+        font-weight: 500;
+        color: #393939;
+        width: 100%;
+        height: 40px;
+        padding: 0 8px 0 40px;
+        background: #fff url("../img/ic_subHeader_search.png") no-repeat center left 10px/24px 24px; }
+        header .subHeaderWrap .searchBox input::placeholder {
+          color: #909090; }
+
+footer .footerWrap {
+  padding: 16px 20px 20px;
+  font-size: 0;
+  position: relative;
+  box-shadow: inset 0 1px 0 0 #f3f3f3; }
+  footer .footerWrap .footerMenu {
+    padding: 0 0 4px; }
+    footer .footerWrap .footerMenu a {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #232323; }
+      footer .footerWrap .footerMenu a + a {
+        margin-left: 20px; }
+        footer .footerWrap .footerMenu a + a:after {
+          content: '';
+          position: absolute;
+          left: -10px;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 10px;
+          width: 1px;
+          background-color: #959595; }
+  footer .footerWrap .copyright {
+    color: #393939;
+    font-size: 11px;
+    line-height: 20px; }
+
+section .inner,
+footer .inner {
+  max-width: 720px;
+  margin: 0 auto; }
+
+.contents {
+  padding: 80px 0 0; }
+  .contents.page {
+    padding: 112px 0 0; }
+
+.gnbWrap {
+  display: none;
+  width: 29.2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 13.9rem 0px rgba(0, 0, 0, 0.2);
+  z-index: 30; }
+  .gnbWrap .gnbGroup {
+    position: relative;
+    padding: 13.5rem 0 0 5.8rem; }
+    .gnbWrap .gnbGroup nav.gnb .gnbBox .soon {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #000;
+      color: #fff;
+      line-height: 25px;
+      width: 94px;
+      text-align: center;
+      margin-left: 7px;
+      font-size: 1.1rem; }
+    .gnbWrap .gnbGroup nav.gnb .gnbBox + .gnbBox {
+      padding-top: 3.3rem; }
+    .gnbWrap .gnbGroup nav.gnb .gnbBox .subject {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 2rem;
+      letter-spacing: 0.05rem; }
+    .gnbWrap .gnbGroup nav.gnb .gnbBox ul.gnbList {
+      display: none;
+      padding-top: 2.3rem; }
+      .gnbWrap .gnbGroup nav.gnb .gnbBox ul.gnbList li + li {
+        margin-top: 1.4rem; }
+      .gnbWrap .gnbGroup nav.gnb .gnbBox ul.gnbList li a {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        color: #888888;
+        font-size: 1.4rem;
+        letter-spacing: 0.035rem;
+        padding-left: 1.9rem; }
+        .gnbWrap .gnbGroup nav.gnb .gnbBox ul.gnbList li a:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1.1rem;
+          height: 0.1rem;
+          background-color: #888888; }
+
+section.mainSearch {
+  padding: 80px 0 0; }
+  section.mainSearch .mainIntroBox {
+    font-size: 43px;
+    line-height: 52px;
+    letter-spacing: -0.0215px;
+    font-weight: 500;
+    padding-bottom: 39px; }
+    section.mainSearch .mainIntroBox .accent {
+      font-weight: 900;
+      color: #003bff; }
+  section.mainSearch .mainSearchGroup {
+    max-width: 780px;
+    margin: 0 auto; }
+    section.mainSearch .mainSearchGroup .mainSearchBox {
+      border-radius: 41px;
+      border: solid 4px #0029b2;
+      height: 82px;
+      position: relative; }
+      section.mainSearch .mainSearchGroup .mainSearchBox .searchSubmitBtn {
+        position: absolute;
+        left: 700px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url("../img/ic_main_search.png") no-repeat center/cover;
+        width: 40px;
+        height: 40px; }
+      section.mainSearch .mainSearchGroup .mainSearchBox input {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        padding: 0 120px 0 90px;
+        outline: none;
+        font-size: 26px;
+        letter-spacing: -0.026px;
+        font-weight: 700;
+        color: #000; }
+        section.mainSearch .mainSearchGroup .mainSearchBox input::placeholder {
+          color: #393939;
+          opacity: 0.5; }
+      section.mainSearch .mainSearchGroup .mainSearchBox .searchBtn {
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        right: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        color: #fff;
+        background-color: #0029b2;
+        border-radius: 50%;
+        font-size: 26px;
+        letter-spacing: -0.026px;
+        z-index: 1; }
+    section.mainSearch .mainSearchGroup .mainSearchKeywordBox {
+      font-size: 0;
+      padding-top: 11px; }
+      section.mainSearch .mainSearchGroup .mainSearchKeywordBox .subject {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.0065px;
+        color: #909090; }
+      section.mainSearch .mainSearchGroup .mainSearchKeywordBox .keywordList {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 16px; }
+        section.mainSearch .mainSearchGroup .mainSearchKeywordBox .keywordList .keyword {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: -0.0065px;
+          color: #232323; }
+          section.mainSearch .mainSearchGroup .mainSearchKeywordBox .keywordList .keyword + .keyword {
+            margin-left: 24px; }
+  section.mainSearch .mainItemGroup {
+    padding: 50px 0 60px;
+    text-align: center;
+    font-size: 0; }
+    section.mainSearch .mainItemGroup .itemBox {
+      display: inline-block;
+      vertical-align: middle;
+      width: 360px;
+      height: 158px;
+      padding-top: 60px; }
+      section.mainSearch .mainItemGroup .itemBox:nth-child(1) {
+        background: url("../img/ic_main_item1.png") no-repeat center top 10px/48px 48px; }
+      section.mainSearch .mainItemGroup .itemBox:nth-child(2) {
+        background: url("../img/ic_main_item2.png") no-repeat center top 10px/48px 48px; }
+      section.mainSearch .mainItemGroup .itemBox .itemNm {
+        line-height: 48px;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: -0.0105px; }
+      section.mainSearch .mainItemGroup .itemBox .itemMenu .itemBtn {
+        color: #232323;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 60px;
+        font-size: 16px;
+        letter-spacing: -0.008px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+        border: solid 1px #dddddd; }
+        section.mainSearch .mainItemGroup .itemBox .itemMenu .itemBtn + .itemBtn {
+          margin-left: 8px; }
+
+section.mainCurrentBoard {
+  padding-bottom: 150px;
+  font-size: 0; }
+  section.mainCurrentBoard .boardList {
+    padding: 30px 0;
+    box-shadow: inset 0 1px 0 0 #dddddd, inset 0 -1px 0 0 #dddddd; }
+    section.mainCurrentBoard .boardList .boardBox {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(33.33% - 20px); }
+      section.mainCurrentBoard .boardList .boardBox + .boardBox {
+        margin-left: 30px; }
+      section.mainCurrentBoard .boardList .boardBox .boardTit {
+        position: relative; }
+        section.mainCurrentBoard .boardList .boardBox .boardTit .titTxt {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 700; }
+        section.mainCurrentBoard .boardList .boardBox .boardTit .moreBtn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url("../img/ic_more_arrow.png") no-repeat center right/24px 24px;
+          padding-right: 18px;
+          font-size: 11px;
+          line-height: 24px;
+          letter-spacing: 0.3px;
+          color: #909090; }
+      section.mainCurrentBoard .boardList .boardBox .itemList {
+        padding: 20px 0 0; }
+        section.mainCurrentBoard .boardList .boardBox .itemList li + li {
+          margin-top: 10px; }
+        section.mainCurrentBoard .boardList .boardBox .itemList li a {
+          display: block;
+          position: relative; }
+          section.mainCurrentBoard .boardList .boardBox .itemList li a .itemNmBox {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%; }
+            section.mainCurrentBoard .boardList .boardBox .itemList li a .itemNmBox .nm {
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              word-wrap: normal;
+              width: 100%;
+              overflow: hidden;
+              width: auto;
+              max-width: 88%;
+              font-size: 13px;
+              letter-spacing: -0.5px;
+              line-height: 20px;
+              color: #393939;
+              display: inline-block;
+              vertical-align: middle; }
+            section.mainCurrentBoard .boardList .boardBox .itemList li a .itemNmBox .comment {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 13px;
+              letter-spacing: -0.5px;
+              line-height: 20px;
+              color: #ff6800;
+              padding-left: 3px;
+              width: 27px; }
+          section.mainCurrentBoard .boardList .boardBox .itemList li a .itemDateBox {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%); }
+            section.mainCurrentBoard .boardList .boardBox .itemList li a .itemDateBox .dateTxt {
+              font-size: 13px;
+              color: #909090; }
+
+section.searchResult {
+  margin: 40px 0 136px;
+  font-size: 0; }
+  section.searchResult .searchResultWrap {
+    border: 1px solid #dddddd; }
+    section.searchResult .searchResultWrap .titBox {
+      box-shadow: inset 0 -1px 0 0 #f3f3f3;
+      padding: 20px 30px; }
+      section.searchResult .searchResultWrap .titBox .txt {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 24px;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: -1px; }
+    section.searchResult .searchResultWrap .conBox {
+      padding: 20px 30px 40px; }
+      section.searchResult .searchResultWrap .conBox .noneBox {
+        padding: 60px 0 40px;
+        text-align: center;
+        color: #909090;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.3px; }
+      section.searchResult .searchResultWrap .conBox .tabsBox {
+        border-radius: 2px;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04), inset 0 -1px 0 0 #dddddd;
+        border: solid 1px #dddddd;
+        overflow: hidden; }
+        section.searchResult .searchResultWrap .conBox .tabsBox a {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          width: 25%;
+          box-shadow: inset -1px 0 0 0 #dddddd;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 44px;
+          color: #393939; }
+          section.searchResult .searchResultWrap .conBox .tabsBox a.on {
+            background-color: #3d69ff;
+            color: #fff; }
+      section.searchResult .searchResultWrap .conBox ul.searchResultList {
+        padding: 10px 0 30px; }
+        section.searchResult .searchResultWrap .conBox ul.searchResultList li {
+          box-shadow: inset 0 -1px 0 0 #f3f3f3; }
+          section.searchResult .searchResultWrap .conBox ul.searchResultList li a {
+            padding: 13px 215px 13px 0;
+            display: block;
+            position: relative; }
+            section.searchResult .searchResultWrap .conBox ul.searchResultList li a .subject {
+              display: block;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              word-wrap: normal;
+              width: 100%;
+              overflow: hidden;
+              max-width: 100%;
+              font-size: 14px;
+              line-height: 22px;
+              letter-spacing: -0.3px; }
+            section.searchResult .searchResultWrap .conBox ul.searchResultList li a .information {
+              text-align: right;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 200px;
+              font-size: 13px;
+              line-height: 22px;
+              color: #666; }
+
+section.standardList .standardListWrap {
+  margin: 0 auto;
+  text-align: center;
+  padding: 18px 0 44px; }
+  section.standardList .standardListWrap ul {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 320px; }
+    section.standardList .standardListWrap ul + ul {
+      margin-left: 40px; }
+    section.standardList .standardListWrap ul li + li {
+      margin-top: 6px; }
+    section.standardList .standardListWrap ul li a {
+      display: block;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      line-height: 20px;
+      font-size: 13px; }
+
+section.standardSheet {
+  position: relative;
+  height: calc(100vh - 192px);
+  overflow: hidden; }
+  section.standardSheet .sheetWrap {
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    font-size: 0; }
+  section.standardSheet .indexGroup {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fafbff;
+    position: relative;
+    box-shadow: inset 0 -1px 0 0 #f3f3f3, inset -1px 0 0 0 #dddddd;
+    height: 100%;
+    overflow-y: auto; }
+    section.standardSheet .indexGroup .floatBtn {
+      position: absolute;
+      right: 20px;
+      bottom: 20px; }
+      section.standardSheet .indexGroup .floatBtn.write {
+        width: 56px;
+        height: 56px;
+        background: url("../img/ic_write.png") no-repeat center/cover; }
+    section.standardSheet .indexGroup ul.boardList li a {
+      display: block;
+      padding: 10px 20px; }
+      section.standardSheet .indexGroup ul.boardList li a.on {
+        background-color: rgba(0, 59, 255, 0.04); }
+        section.standardSheet .indexGroup ul.boardList li a.on .titBox {
+          color: #111; }
+      section.standardSheet .indexGroup ul.boardList li a .titBox {
+        font-size: 0;
+        max-width: 100%;
+        width: 100%; }
+        section.standardSheet .indexGroup ul.boardList li a .titBox .label {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: -0.3px;
+          width: 47px;
+          font-weight: 500; }
+          section.standardSheet .indexGroup ul.boardList li a .titBox .label.type1 {
+            color: #0029b2; }
+          section.standardSheet .indexGroup ul.boardList li a .titBox .label.type2 {
+            color: #0094b9; }
+          section.standardSheet .indexGroup ul.boardList li a .titBox .label.type3 {
+            color: #b98e00; }
+        section.standardSheet .indexGroup ul.boardList li a .titBox .txtBox {
+          display: inline-block;
+          vertical-align: middle;
+          padding-left: 6px;
+          max-width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
+          width: 100%;
+          overflow: hidden;
+          width: calc(100% - 47px);
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: -0.3px;
+          font-weight: 500;
+          color: #393939; }
+      section.standardSheet .indexGroup ul.boardList li a .dateTxt {
+        color: #909090;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        font-weight: 500; }
+    section.standardSheet .indexGroup ul.qaList li a {
+      display: block;
+      padding: 10px 20px; }
+      section.standardSheet .indexGroup ul.qaList li a.on {
+        background-color: rgba(0, 59, 255, 0.04); }
+        section.standardSheet .indexGroup ul.qaList li a.on .titBox {
+          color: #111; }
+      section.standardSheet .indexGroup ul.qaList li a .titBox {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        width: 100%;
+        overflow: hidden;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.3px;
+        font-weight: 500;
+        color: #393939; }
+      section.standardSheet .indexGroup ul.qaList li a .dateTxt {
+        color: #909090;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 0.3px; }
+    section.standardSheet .indexGroup ul.depth1 {
+      padding: 15px 20px; }
+      section.standardSheet .indexGroup ul.depth1 a {
+        display: block;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: -0.3px; }
+        section.standardSheet .indexGroup ul.depth1 a.on:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          height: 26px;
+          opacity: 0.04;
+          background-color: #003bff; }
+      section.standardSheet .indexGroup ul.depth1 ul.depth2 {
+        padding: 5px 0 5px 10px; }
+        section.standardSheet .indexGroup ul.depth1 ul.depth2 ul.depth3 {
+          padding: 5px 0 5px 10px; }
+          section.standardSheet .indexGroup ul.depth1 ul.depth2 ul.depth3 a {
+            color: #393939; }
+            section.standardSheet .indexGroup ul.depth1 ul.depth2 ul.depth3 a.f_red {
+              color: #ff3333; }
+          section.standardSheet .indexGroup ul.depth1 ul.depth2 ul.depth3 ul.depth4 {
+            padding: 5px 0 5px 5px; }
+  section.standardSheet .contentsGroup {
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 30%);
+    padding: 20px 0;
+    height: 100%;
+    overflow-y: auto; }
+    section.standardSheet .contentsGroup .mobileHeader {
+      display: none;
+      text-align: center; }
+    section.standardSheet .contentsGroup .boardConGroup {
+      padding: 0 60px; }
+      section.standardSheet .contentsGroup .boardConGroup .boardHeader {
+        padding-bottom: 18px;
+        box-shadow: inset 0 -1px 0 0 #dddddd;
+        position: relative; }
+        section.standardSheet .contentsGroup .boardConGroup .boardHeader .titTxt {
+          padding-left: 70px;
+          position: relative; }
+          section.standardSheet .contentsGroup .boardConGroup .boardHeader .titTxt .label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 500; }
+            section.standardSheet .contentsGroup .boardConGroup .boardHeader .titTxt .label.type1 {
+              color: #0029b2; }
+            section.standardSheet .contentsGroup .boardConGroup .boardHeader .titTxt .label.type2 {
+              color: #0094b9; }
+            section.standardSheet .contentsGroup .boardConGroup .boardHeader .titTxt .label.type3 {
+              color: #b98e00; }
+          section.standardSheet .contentsGroup .boardConGroup .boardHeader .titTxt .txt {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            width: 100%;
+            overflow: hidden;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 700; }
+        section.standardSheet .contentsGroup .boardConGroup .boardHeader .dateTxt .txt {
+          font-size: 13px;
+          line-height: 24px;
+          color: #393939; }
+          section.standardSheet .contentsGroup .boardConGroup .boardHeader .dateTxt .txt + .txt {
+            margin-left: 15px; }
+      section.standardSheet .contentsGroup .boardConGroup .boardCon {
+        padding: 20px 0 0; }
+        section.standardSheet .contentsGroup .boardConGroup .boardCon .boardData .dummyData {
+          font-size: 14px;
+          color: #393939;
+          line-height: 22px;
+          letter-spacing: -0.3px; }
+        section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu {
+          position: relative;
+          margin: 62px 0 0; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu .recommendBox {
+            border-radius: 2px;
+            border: solid 1px #dddddd;
+            text-align: center;
+            padding: 0 20px 0 42px;
+            background: #fff url("../img/ic_recommend_on.png") no-repeat center left 14px/24px 24px; }
+            section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu .recommendBox span {
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 42px;
+              font-size: 13px;
+              font-weight: 500; }
+              section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu .recommendBox span.num {
+                color: #003bff;
+                padding-left: 3px; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu .setMenu {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0; }
+            section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu .setMenu a {
+              font-size: 14px;
+              line-height: 22px; }
+              section.standardSheet .contentsGroup .boardConGroup .boardCon .boardMenu .setMenu a + a {
+                margin-left: 14px; }
+        section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup .commentInputBox {
+          margin-top: 20px;
+          padding: 20px 0;
+          box-shadow: inset 0 1px 0 0 #dddddd;
+          border-bottom: 1px solid #ddd; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup .commentInputBox .titTxt {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.3px;
+            font-weight: 500; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup .commentInputBox textarea {
+            border-radius: 1px;
+            border: solid 1px #dddddd;
+            margin: 10px 0;
+            width: 100%;
+            height: 94px;
+            outline: none;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.3px;
+            padding: 12px 20px;
+            resize: none; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup .commentInputBox .commentMenu {
+            text-align: right; }
+            section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup .commentInputBox .commentMenu .commentBtn {
+              line-height: 40px;
+              text-align: center;
+              color: #fff;
+              border-radius: 1px;
+              background-color: #0029b2;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: -0.3px;
+              width: 98px; }
+        section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup ul.commentList li {
+          font-size: 0;
+          letter-spacing: -0.3px;
+          font-weight: 500;
+          color: #393939;
+          line-height: 22px;
+          box-shadow: inset 0 -1px 0 0 #f3f3f3;
+          padding: 16px 0; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup ul.commentList li .nmBox {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            width: 140px;
+            padding-right: 20px; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup ul.commentList li .conBox {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            width: calc(100% - 265px);
+            padding-right: 20px; }
+          section.standardSheet .contentsGroup .boardConGroup .boardCon .commentGroup ul.commentList li .dateBox {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 13px;
+            width: 125px;
+            color: #909090; }
+    section.standardSheet .contentsGroup .qaCon {
+      padding: 0 60px; }
+      section.standardSheet .contentsGroup .qaCon .qaHeader {
+        padding-bottom: 18px;
+        box-shadow: inset 0 -1px 0 0 #dddddd;
+        position: relative; }
+        section.standardSheet .contentsGroup .qaCon .qaHeader .titTxt {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
+          width: 100%;
+          overflow: hidden;
+          font-size: 15px;
+          line-height: 24px;
+          font-weight: 700; }
+        section.standardSheet .contentsGroup .qaCon .qaHeader .dateTxt {
+          font-size: 13px;
+          line-height: 24px;
+          color: #393939; }
+        section.standardSheet .contentsGroup .qaCon .qaHeader .bookmark {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
+          width: 100%;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          left: -40px;
+          width: 24px;
+          height: 24px;
+          background: url("../img/ic_bookmark_off.png") no-repeat center/24px 24px; }
+          section.standardSheet .contentsGroup .qaCon .qaHeader .bookmark.on {
+            background: url("../img/ic_bookmark_on.png") no-repeat center/24px 24px; }
+      section.standardSheet .contentsGroup .qaCon .qaCon {
+        padding: 20px 0 0; }
+        section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummyTit {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: -0.3px; }
+        section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummySubTit {
+          padding-top: 4px;
+          line-height: 22px;
+          font-size: 14px; }
+          section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummySubTit .f_blue {
+            font-weight: 500;
+            color: #003bff; }
+        section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummyCon {
+          padding-top: 20px; }
+          section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummyCon .subject {
+            color: #393939;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: -0.3px;
+            font-weight: 500; }
+          section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummyCon .txt {
+            font-size: 13px;
+            line-height: 24px;
+            color: #393939; }
+            section.standardSheet .contentsGroup .qaCon .qaCon .dummyData .dummyCon .txt .f_blue {
+              font-weight: 500;
+              color: #003bff; }
+    section.standardSheet .contentsGroup .titBox {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+      padding: 0 60px 20px; }
+    section.standardSheet .contentsGroup ul.depth1 {
+      padding: 0 20px 0 60px; }
+      section.standardSheet .contentsGroup ul.depth1 + ul {
+        margin-top: 40px; }
+      section.standardSheet .contentsGroup ul.depth1 .subject {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.3px;
+        padding-bottom: 10px; }
+      section.standardSheet .contentsGroup ul.depth1 .subSubject {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.3px;
+        color: #393939;
+        font-weight: 400;
+        padding-bottom: 10px;
+        font-style: italic; }
+      section.standardSheet .contentsGroup ul.depth1 li ul.depth2 {
+        padding: 0 0 0 40px; }
+        section.standardSheet .contentsGroup ul.depth1 li ul.depth2 .subject {
+          padding-bottom: 20px; }
+        section.standardSheet .contentsGroup ul.depth1 li ul.depth2 li + li {
+          margin-top: 30px; }
+        section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li + li {
+          margin-top: 20px; }
+        section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .infoBox {
+          position: absolute;
+          left: 20px;
+          font-size: 0; }
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .infoBox .bookmark {
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+            background: url("../img/ic_bookmark_off.png") no-repeat center/cover;
+            margin-right: 16px; }
+            section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .infoBox .bookmark.on {
+              background-image: url("../img/ic_bookmark_on.png"); }
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .infoBox .num {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.3px;
+            color: #393939; }
+        section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row {
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.3px;
+          color: #393939; }
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .f_blue,
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .f_purple {
+            position: relative;
+            font-weight: 500; }
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .f_blue {
+            color: #003bff; }
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .f_purple {
+            color: #6400ff; }
+          section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .hoverMenu {
+            position: absolute;
+            padding-bottom: 32px;
+            top: -32px;
+            right: -20px;
+            width: 320px;
+            font-size: 0;
+            display: none; }
+            section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .hoverMenu a {
+              display: inline-block;
+              vertical-align: middle;
+              width: 152px;
+              height: 28px;
+              line-height: 28px;
+              text-align: center;
+              border-radius: 3px;
+              font-size: 11px;
+              letter-spacing: -0.5px; }
+              section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .hoverMenu a:nth-of-type(1) {
+                color: #393939;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                border: solid 1px #dddddd;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06)), linear-gradient(to bottom, #ffffff, #ffffff); }
+              section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row .hoverMenu a:nth-of-type(2) {
+                margin-left: 16px;
+                color: #fff;
+                box-shadow: 0 4px 8px 0 rgba(41, 0, 82, 0.2);
+                border: solid 1px #262626;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06)), linear-gradient(to bottom, #393939, #393939); }
+
+section.mypage .mypageWrap {
+  max-width: 1100px;
+  position: relative;
+  padding-left: 280px;
+  margin: 40px auto 0; }
+  section.mypage .mypageWrap .mypageNav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 260px; }
+    section.mypage .mypageWrap .mypageNav ul {
+      width: 100%;
+      border: 1px solid #ddd; }
+      section.mypage .mypageWrap .mypageNav ul li:last-child a {
+        box-shadow: none; }
+      section.mypage .mypageWrap .mypageNav ul li a {
+        display: block;
+        line-height: 40px;
+        padding: 0 20px;
+        font-size: 13px;
+        box-shadow: inset 0 -1px 0 0 #f3f3f3; }
+        section.mypage .mypageWrap .mypageNav ul li a.on {
+          background-color: rgba(0, 59, 255, 0.04);
+          font-weight: 700; }
+  section.mypage .mypageWrap .mypageGroup {
+    border: solid 1px #dddddd; }
+    section.mypage .mypageWrap .mypageGroup .mypageTit {
+      position: relative;
+      line-height: 64px;
+      padding: 0 20px;
+      color: #393939;
+      font-size: 19px;
+      letter-spacing: -1px;
+      font-weight: 700;
+      box-shadow: inset 0 -1px 0 0 #f3f3f3; }
+      section.mypage .mypageWrap .mypageGroup .mypageTit .info {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+        color: #393939;
+        line-height: 24px;
+        font-weight: 400; }
+    section.mypage .mypageWrap .mypageGroup .policyCon {
+      padding: 20px 30px;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: -0.3px;
+      color: #393939; }
+    section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup {
+      padding: 30px; }
+      section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox + .inputBox {
+        margin-top: 60px; }
+      section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputTit {
+        font-weight: 700;
+        color: #393939;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        padding-bottom: 20px; }
+      section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row {
+        position: relative; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .agree {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 24px;
+          height: 24px;
+          background: url(../img/ic_agree_arrow.png) no-repeat center/cover;
+          z-index: 1; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row + .row {
+          margin-top: 20px; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .subject {
+          font-size: 13px;
+          line-height: 22px;
+          letter-spacing: -0.3px;
+          padding-bottom: 8px; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .con {
+          position: relative; }
+          section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .con textarea {
+            border-radius: 2px;
+            border: solid 1px #dddddd;
+            resize: none;
+            width: 100%;
+            height: 194px;
+            outline: none;
+            padding: 7px 16px;
+            font-size: 13px;
+            line-height: 24px; }
+          section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .con .tbox {
+            padding: 0 85px 0 16px; }
+          section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .con .btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 63px;
+            border-radius: 3px;
+            border: solid 1px #dddddd;
+            background-color: #ffffff;
+            line-height: 26px;
+            color: #393939;
+            font-size: 11px;
+            letter-spacing: -0.5px;
+            text-align: center; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .info {
+          padding-top: 4px;
+          color: #909090;
+          font-size: 11px;
+          line-height: 16px;
+          letter-spacing: -0.3px; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .menu .btn {
+          width: 108px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 14px;
+          font-weight: 500;
+          border-radius: 1px; }
+          section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .menu .btn.positiveBtn {
+            background-color: #0029b2;
+            color: #fff; }
+        section.mypage .mypageWrap .mypageGroup .mypageCon .inputGroup .inputBox .inputList .row .mobileTxt {
+          display: none; }
+    section.mypage .mypageWrap .mypageGroup .bookmarkCon {
+      padding: 20px 30px; }
+      section.mypage .mypageWrap .mypageGroup .bookmarkCon .tabsBox {
+        font-size: 0;
+        border-radius: 2px;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04), inset 0 -1px 0 0 #dddddd;
+        border: solid 1px #dddddd;
+        overflow: hidden; }
+        section.mypage .mypageWrap .mypageGroup .bookmarkCon .tabsBox a {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          width: 25%;
+          box-shadow: inset -1px 0 0 0 #dddddd;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 44px;
+          color: #393939; }
+          section.mypage .mypageWrap .mypageGroup .bookmarkCon .tabsBox a.on {
+            background-color: #3d69ff;
+            color: #fff; }
+      section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup article.paging {
+        padding-top: 30px; }
+      section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn {
+        width: 100%; }
+        section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .subjectBox {
+          display: block;
+          padding: 12px 34px 12px 0;
+          background: url("../img/ic_tab_hide.png") no-repeat center right/24px 24px;
+          box-shadow: inset 0 -1px 0 0 #f3f3f3;
+          font-size: 14px;
+          line-height: 22px; }
+          section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .subjectBox.on {
+            background: url("../img/ic_tab_show.png") no-repeat center right/24px 24px; }
+            section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .subjectBox.on ~ .conBox {
+              display: block; }
+        section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox {
+          display: none;
+          background-color: #f3f3f3; }
+          section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 {
+            padding: 20px 20px 20px 0; }
+            section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li {
+              position: relative;
+              padding: 0 0 0 50px; }
+              section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li + li {
+                margin-top: 20px; }
+              section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .infoBox {
+                position: absolute;
+                left: 14px;
+                font-size: 0;
+                text-align: center; }
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .infoBox .bookmark {
+                  cursor: pointer;
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 24px;
+                  height: 24px;
+                  background: url("../img/ic_bookmark_off.png") no-repeat center/cover; }
+                  section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .infoBox .bookmark.on {
+                    background-image: url("../img/ic_bookmark_on.png"); }
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .infoBox .num {
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size: 13px;
+                  line-height: 24px;
+                  letter-spacing: -0.3px;
+                  color: #393939; }
+              section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row {
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: -0.3px;
+                color: #393939; }
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .f_blue,
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .f_purple {
+                  position: relative;
+                  font-weight: 500; }
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .f_blue {
+                  color: #003bff; }
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .f_purple {
+                  color: #6400ff; }
+                section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .hoverMenu {
+                  position: absolute;
+                  padding-bottom: 32px;
+                  top: -32px;
+                  right: -20px;
+                  width: 320px;
+                  font-size: 0;
+                  display: none; }
+                  section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .hoverMenu a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 152px;
+                    height: 28px;
+                    line-height: 28px;
+                    text-align: center;
+                    border-radius: 3px;
+                    font-size: 11px;
+                    letter-spacing: -0.5px; }
+                    section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .hoverMenu a:nth-of-type(1) {
+                      color: #393939;
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                      border: solid 1px #dddddd;
+                      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06)), linear-gradient(to bottom, #ffffff, #ffffff); }
+                    section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn .conBox ul.depth3 li .row .hoverMenu a:nth-of-type(2) {
+                      margin-left: 16px;
+                      color: #fff;
+                      box-shadow: 0 4px 8px 0 rgba(41, 0, 82, 0.2);
+                      border: solid 1px #262626;
+                      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06)), linear-gradient(to bottom, #393939, #393939); }
+        section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn.on .subjectBox {
+          background: url("../img/ic_tab_show.png") no-repeat center right/24px 24px; }
+        section.mypage .mypageWrap .mypageGroup .bookmarkCon .bookmarkGroup ul.toggleList li .toggleBtn.on .conBox {
+          display: block; }
+
+section.notice .noticeWrap {
+  max-width: 960px;
+  margin: 40px auto 0;
+  border: solid 1px #dddddd; }
+  section.notice .noticeWrap .noticeTit {
+    line-height: 64px;
+    padding: 0 30px;
+    color: #393939;
+    font-size: 19px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    box-shadow: inset 0 -1px 0 0 #f3f3f3; }
+  section.notice .noticeWrap .noticeCon {
+    padding-bottom: 40px; }
+    section.notice .noticeWrap .noticeCon ul.toggleList {
+      padding: 20px 30px 30px; }
+      section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn {
+        width: 100%; }
+        section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn .subjectBox {
+          position: relative;
+          display: block;
+          background: url("../img/ic_tab_hide.png") no-repeat center right/24px 24px;
+          padding-right: 165px;
+          box-shadow: inset 0 -1px 0 0 #f3f3f3; }
+          section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn .subjectBox .txt {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            width: 100%;
+            overflow: hidden;
+            padding: 12px 0;
+            font-size: 14px;
+            line-height: 22px; }
+          section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn .subjectBox .info {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #909090;
+            font-size: 13px;
+            line-height: 22px; }
+          section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn .subjectBox.on {
+            background: url("../img/ic_tab_show.png") no-repeat center right/24px 24px; }
+            section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn .subjectBox.on ~ .conBox {
+              display: block; }
+        section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn .conBox {
+          display: none;
+          background-color: #f3f3f3;
+          padding: 14px 20px;
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: -0.3px;
+          color: #393939; }
+        section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn.on .subjectBox {
+          background: url("../img/ic_tab_show.png") no-repeat center right/24px 24px; }
+        section.notice .noticeWrap .noticeCon ul.toggleList li .toggleBtn.on .conBox {
+          display: block; }
+
+.popup .loginGroup {
+  padding: 44px 0 48px; }
+  .popup .loginGroup .closeBtn {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/ic_popup_close.png") no-repeat center/cover; }
+  .popup .loginGroup .titBox {
+    padding: 0 0 30px;
+    text-align: center;
+    color: #393939;
+    font-weight: 700;
+    font-size: 19px; }
+  .popup .loginGroup .inputGroup {
+    padding: 0 40px; }
+    .popup .loginGroup .inputGroup .row + .row {
+      margin-top: 30px; }
+    .popup .loginGroup .inputGroup .row .subject {
+      color: #909090;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 20px; }
+    .popup .loginGroup .inputGroup .row .con .tbox {
+      font-size: 13px;
+      width: 100%;
+      padding: 0;
+      border: none;
+      box-shadow: inset 0 -1px 0 0 #dddddd; }
+      .popup .loginGroup .inputGroup .row .con .tbox.placeCenter::placeholder {
+        text-align: center; }
+    .popup .loginGroup .inputGroup .row .subMenu {
+      margin-top: 10px;
+      position: relative; }
+      .popup .loginGroup .inputGroup .row .subMenu .joinBtn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 700;
+        font-size: 11px;
+        color: #393939;
+        line-height: 16px;
+        letter-spacing: -0.3px; }
+      .popup .loginGroup .inputGroup .row .subMenu .findBtn {
+        font-size: 11px;
+        font-weight: 500;
+        color: #393939;
+        line-height: 16px;
+        letter-spacing: -0.3px; }
+    .popup .loginGroup .inputGroup .row .loginBtn {
+      height: 48px;
+      line-height: 48px;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      background-color: #0029b2; }
+    .popup .loginGroup .inputGroup .row .socialBox {
+      padding: 40px 0 30px;
+      text-align: center;
+      font-size: 0; }
+      .popup .loginGroup .inputGroup .row .socialBox a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle; }
+        .popup .loginGroup .inputGroup .row .socialBox a + a {
+          margin-left: 16px; }
+        .popup .loginGroup .inputGroup .row .socialBox a.kakao {
+          background: url("../img/ic_social_kakao.png") no-repeat center/cover; }
+        .popup .loginGroup .inputGroup .row .socialBox a.naver {
+          background: url("../img/ic_social_naver.png") no-repeat center/cover; }
+        .popup .loginGroup .inputGroup .row .socialBox a.facebook {
+          background: url("../img/ic_social_facebook.png") no-repeat center/cover; }
+        .popup .loginGroup .inputGroup .row .socialBox a.google {
+          background: url("../img/ic_social_google.png") no-repeat center/cover; }
+    .popup .loginGroup .inputGroup .row .infoBox {
+      text-align: center;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: -0.3px;
+      color: #909090; }
+      .popup .loginGroup .inputGroup .row .infoBox b {
+        color: #111; }
+
+section.pwReset {
+  margin: 120px auto 0; }
+  section.pwReset .pwResetWrap {
+    max-width: 720px;
+    margin: 0 auto; }
+    section.pwReset .pwResetWrap .infoTxt {
+      padding: 20px 40px 0;
+      font-size: 11px;
+      line-height: 20px;
+      letter-spacing: -0.3px;
+      color: #393939; }
+      section.pwReset .pwResetWrap .infoTxt .row + .row {
+        margin-top: 4px; }
+    section.pwReset .pwResetWrap .pwResetGroup {
+      border: solid 1px #dddddd; }
+    section.pwReset .pwResetWrap .headerBox {
+      box-shadow: inset 0 -1px 0 0 #f3f3f3;
+      padding: 40px; }
+      section.pwReset .pwResetWrap .headerBox a {
+        width: 114px; }
+        section.pwReset .pwResetWrap .headerBox a img {
+          width: 100%;
+          max-width: 100%; }
+    section.pwReset .pwResetWrap .conBox {
+      padding: 40px 40px 58px 40px; }
+      section.pwReset .pwResetWrap .conBox .titBox {
+        color: #393939;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 20px; }
+      section.pwReset .pwResetWrap .conBox .conTxt {
+        padding-top: 26px;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.3px; }
+        section.pwReset .pwResetWrap .conBox .conTxt .link {
+          color: #003bff;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: -0.3px; }
+        section.pwReset .pwResetWrap .conBox .conTxt .menu {
+          padding: 20px 0; }
+          section.pwReset .pwResetWrap .conBox .conTxt .menu .btn {
+            display: inline-block;
+            vertical-align: middle;
+            width: 158px;
+            height: 48px;
+            line-height: 48px;
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            color: #fff;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            background-color: #0029b2; }
+
+section.pwChange {
+  height: calc(100vh - 240px); }
+  section.pwChange .pwWrap {
+    border: solid 1px #dddddd;
+    max-width: 360px;
+    margin: 80px auto 0; }
+    section.pwChange .pwWrap .titBox {
+      padding-top: 44px;
+      font-weight: 700;
+      font-size: 19px;
+      text-align: center;
+      line-height: 24px;
+      letter-spacing: -1px; }
+    section.pwChange .pwWrap .subTitBox {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      padding-top: 10px;
+      letter-spacing: -0.3px; }
+    section.pwChange .pwWrap .inputGroup {
+      padding: 34px 40px 40px; }
+      section.pwChange .pwWrap .inputGroup .row + .row {
+        margin-top: 30px; }
+      section.pwChange .pwWrap .inputGroup .row .btn {
+        height: 48px;
+        line-height: 48px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        background-color: #0029b2; }
+      section.pwChange .pwWrap .inputGroup .row .subject {
+        color: #909090;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 20px; }
+      section.pwChange .pwWrap .inputGroup .row .infoTxt {
+        padding-top: 4px;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: -0.3px;
+        color: #909090; }
+      section.pwChange .pwWrap .inputGroup .row .con .tbox {
+        font-size: 13px;
+        width: 100%;
+        padding: 0;
+        border: none;
+        box-shadow: inset 0 -1px 0 0 #dddddd; }
+        section.pwChange .pwWrap .inputGroup .row .con .tbox.placeCenter::placeholder {
+          text-align: center; }
+      section.pwChange .pwWrap .inputGroup .row .subMenu {
+        margin-top: 10px;
+        position: relative; }
+        section.pwChange .pwWrap .inputGroup .row .subMenu .joinBtn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-weight: 700;
+          font-size: 11px;
+          color: #393939;
+          line-height: 16px;
+          letter-spacing: -0.3px; }
+        section.pwChange .pwWrap .inputGroup .row .subMenu .findBtn {
+          font-size: 11px;
+          font-weight: 500;
+          color: #393939;
+          line-height: 16px;
+          letter-spacing: -0.3px; }
+      section.pwChange .pwWrap .inputGroup .row .loginBtn {
+        height: 48px;
+        line-height: 48px;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        background-color: #0029b2; }
+      section.pwChange .pwWrap .inputGroup .row .socialBox {
+        padding: 40px 0 30px;
+        text-align: center;
+        font-size: 0; }
+        section.pwChange .pwWrap .inputGroup .row .socialBox a {
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          vertical-align: middle; }
+          section.pwChange .pwWrap .inputGroup .row .socialBox a + a {
+            margin-left: 16px; }
+          section.pwChange .pwWrap .inputGroup .row .socialBox a.kakao {
+            background: url("../img/ic_social_kakao.png") no-repeat center/cover; }
+          section.pwChange .pwWrap .inputGroup .row .socialBox a.naver {
+            background: url("../img/ic_social_naver.png") no-repeat center/cover; }
+          section.pwChange .pwWrap .inputGroup .row .socialBox a.facebook {
+            background: url("../img/ic_social_facebook.png") no-repeat center/cover; }
+          section.pwChange .pwWrap .inputGroup .row .socialBox a.google {
+            background: url("../img/ic_social_google.png") no-repeat center/cover; }
+      section.pwChange .pwWrap .inputGroup .row .infoBox {
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: -0.3px;
+        color: #909090; }
+        section.pwChange .pwWrap .inputGroup .row .infoBox b {
+          color: #111; }
+
+section.joinForm .joinWrap {
+  border: solid 1px #dddddd;
+  max-width: 360px;
+  margin: 80px auto 92px; }
+  section.joinForm .joinWrap .titBox {
+    padding-top: 44px;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: -1px; }
+  section.joinForm .joinWrap .subTitBox {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: -0.3px; }
+  section.joinForm .joinWrap .inputGroup {
+    padding: 34px 40px 40px; }
+    section.joinForm .joinWrap .inputGroup .row .agreeBox {
+      position: relative;
+      padding: 8px 0; }
+      section.joinForm .joinWrap .inputGroup .row .agreeBox + .agreeBox {
+        box-shadow: inset 0 1px 0 0 #f3f3f3; }
+      section.joinForm .joinWrap .inputGroup .row .agreeBox .agree {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background: url("../img/ic_agree_arrow.png") no-repeat center/cover; }
+      section.joinForm .joinWrap .inputGroup .row .agreeBox .cbox label.chk .txt {
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.5px; }
+    section.joinForm .joinWrap .inputGroup .row + .row {
+      margin-top: 30px; }
+    section.joinForm .joinWrap .inputGroup .row .alarmTxt {
+      color: red;
+      padding-top: 4px;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: -0.3px; }
+    section.joinForm .joinWrap .inputGroup .row .btn {
+      height: 48px;
+      line-height: 48px;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      background-color: #0029b2; }
+    section.joinForm .joinWrap .inputGroup .row .subject {
+      color: #909090;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 20px; }
+    section.joinForm .joinWrap .inputGroup .row .infoTxt {
+      padding-top: 4px;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: -0.3px;
+      color: #909090; }
+    section.joinForm .joinWrap .inputGroup .row .con .tbox {
+      font-size: 13px;
+      width: 100%;
+      padding: 0;
+      border: none;
+      box-shadow: inset 0 -1px 0 0 #dddddd; }
+      section.joinForm .joinWrap .inputGroup .row .con .tbox.placeCenter::placeholder {
+        text-align: center; }
+    section.joinForm .joinWrap .inputGroup .row .subMenu {
+      margin-top: 10px;
+      position: relative; }
+      section.joinForm .joinWrap .inputGroup .row .subMenu .joinBtn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 700;
+        font-size: 11px;
+        color: #393939;
+        line-height: 16px;
+        letter-spacing: -0.3px; }
+      section.joinForm .joinWrap .inputGroup .row .subMenu .findBtn {
+        font-size: 11px;
+        font-weight: 500;
+        color: #393939;
+        line-height: 16px;
+        letter-spacing: -0.3px; }
+    section.joinForm .joinWrap .inputGroup .row .loginBtn {
+      height: 48px;
+      line-height: 48px;
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      color: #fff;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      background-color: #0029b2; }
+    section.joinForm .joinWrap .inputGroup .row .socialBox {
+      padding: 40px 0 30px;
+      text-align: center;
+      font-size: 0; }
+      section.joinForm .joinWrap .inputGroup .row .socialBox a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle; }
+        section.joinForm .joinWrap .inputGroup .row .socialBox a + a {
+          margin-left: 16px; }
+        section.joinForm .joinWrap .inputGroup .row .socialBox a.kakao {
+          background: url("../img/ic_social_kakao.png") no-repeat center/cover; }
+        section.joinForm .joinWrap .inputGroup .row .socialBox a.naver {
+          background: url("../img/ic_social_naver.png") no-repeat center/cover; }
+        section.joinForm .joinWrap .inputGroup .row .socialBox a.facebook {
+          background: url("../img/ic_social_facebook.png") no-repeat center/cover; }
+        section.joinForm .joinWrap .inputGroup .row .socialBox a.google {
+          background: url("../img/ic_social_google.png") no-repeat center/cover; }
+    section.joinForm .joinWrap .inputGroup .row .infoBox {
+      text-align: center;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: -0.3px;
+      color: #909090; }
+      section.joinForm .joinWrap .inputGroup .row .infoBox b {
+        color: #111; }
+
+/*# sourceMappingURL=style.css.map */
