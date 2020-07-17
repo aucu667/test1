@@ -21,7 +21,7 @@ header {
     max-width: 1920px;
     margin: 0 auto;
     text-align: right;
-    padding: 8px 20px 8px 20px; }
+    padding: 20px 20px 20px 20px; }
     header .headerWrap .mobileHeader {
       display: none; }
     header .headerWrap h1.logo {
@@ -37,8 +37,7 @@ header {
         width: 114px;
         height: 48px; }
         header .headerWrap h1.logo a img {
-          margin-top: 5PX;
-          width: 35%;
+          width: 100%;
           max-width: 100%; }
     header .headerWrap nav {
       display: inline-block;
@@ -64,7 +63,7 @@ header {
         header .headerWrap nav .navMenu a {
           display: inline-block;
           vertical-align: middle;
-          font-size: 15px;
+          font-size: 18px;
           line-height: 40px;
           font-weight: 700; }
         header .headerWrap nav .navMenu ul {
@@ -130,7 +129,7 @@ header {
       overflow: hidden; }
       header .subHeaderWrap .searchBox input {
         outline: none;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
         color: #393939;
         width: 100%;
@@ -179,7 +178,7 @@ footer .inner {
 .contents {
   padding: 80px 0 0; }
   .contents.page {
-    padding: 112px 0 0; }
+    padding: 136px 0 0; }
 
 .gnbWrap {
   display: none;
@@ -250,12 +249,12 @@ section.mainSearch {
     margin: 0 auto; }
     section.mainSearch .mainSearchGroup .mainSearchBox {
       border-radius: 41px;
-      border: solid 4px #0029b2;
+      border: solid 6px #0029b2;
       height: 82px;
       position: relative; }
       section.mainSearch .mainSearchGroup .mainSearchBox .searchSubmitBtn {
         position: absolute;
-        left: 700px;
+        left: 30px;
         top: 50%;
         transform: translateY(-50%);
         background: url("../img/ic_main_search.png") no-repeat center/cover;
@@ -526,7 +525,7 @@ section.standardSheet {
     height: 100%;
     font-size: 0; }
   section.standardSheet .indexGroup {
-    width: 30%;
+    width: 420px;
     display: inline-block;
     vertical-align: top;
     background-color: #fafbff;
@@ -616,7 +615,7 @@ section.standardSheet {
       padding: 15px 20px; }
       section.standardSheet .indexGroup ul.depth1 a {
         display: block;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 26px;
         letter-spacing: -0.3px; }
         section.standardSheet .indexGroup ul.depth1 a.on:after {
@@ -642,7 +641,7 @@ section.standardSheet {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 30%);
+    width: calc(100% - 420px);
     padding: 20px 0;
     height: 100%;
     overflow-y: auto; }
@@ -863,11 +862,11 @@ section.standardSheet {
         letter-spacing: -0.3px;
         padding-bottom: 10px; }
       section.standardSheet .contentsGroup ul.depth1 .subSubject {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 22px;
         letter-spacing: -0.3px;
         color: #393939;
-        font-weight: 400;
+        font-weight: 700;
         padding-bottom: 10px;
         font-style: italic; }
       section.standardSheet .contentsGroup ul.depth1 li ul.depth2 {
@@ -894,12 +893,12 @@ section.standardSheet {
           section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .infoBox .num {
             display: inline-block;
             vertical-align: middle;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 24px;
             letter-spacing: -0.3px;
             color: #393939; }
         section.standardSheet .contentsGroup ul.depth1 li ul.depth2 ul.depth3 li .row {
-          font-size: 14px;
+          font-size: 13px;
           line-height: 24px;
           letter-spacing: -0.3px;
           color: #393939; }
