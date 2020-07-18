@@ -114,7 +114,7 @@ header {
         padding-left: 20px;
         line-height: 40px;
         color: #fff;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500; }
         header .subHeaderWrap .subjectBox .txt + .txt {
           padding-left: 40px;
@@ -129,7 +129,7 @@ header {
       overflow: hidden; }
       header .subHeaderWrap .searchBox input {
         outline: none;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
         color: #393939;
         width: 100%;
@@ -577,7 +577,7 @@ section.standardSheet {
           width: 100%;
           overflow: hidden;
           width: calc(100% - 47px);
-          font-size: 13px;
+          font-size: 14px;
           line-height: 20px;
           letter-spacing: -0.3px;
           font-weight: 500;
